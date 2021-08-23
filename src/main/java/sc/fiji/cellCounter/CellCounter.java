@@ -920,5 +920,7 @@ public class CellCounter extends JFrame implements ActionListener, ItemListener
 		instance.currentMarkerVector = instance.typeVector.get(index);
 		instance.ic.setCurrentMarkerVector(instance.currentMarkerVector);
 	}
-
+		public void deleteLast() {
+			ic.removeLastMarker();
+	}
 }
